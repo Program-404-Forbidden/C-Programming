@@ -1,15 +1,25 @@
 #include <stdio.h>
 int main()
 {
-    int A, B;
-    scanf("%d%d", &A, &B);
+    int A, B, C;
+    scanf("%d%d%d", &A, &B, &C);
     if (A > B)
     {
-        printf("%d is Greater", A);
+        if(A > C){
+            printf("%d is greater", A);
+        }
+        else{
+            printf("%d is greater", C);
+        }
     }
     else
     {
-        printf("%d is Greater", B);
+        if(B > C){
+            printf("%d is greater", B);
+        }
+        else{
+            printf("%d is greater", C);
+        }
     }
     return 0;
 }
